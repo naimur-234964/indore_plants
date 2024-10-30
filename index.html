@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Indore Plants</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
     <!-- css file -->
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline bg-red-400 sm:bg-green-400 md:bg-blue-400 lg:bg-violet-400 xl:bg-orange-400 font-Lobster container">
-    Hello world!
-  </h1>
+    <!-- Header Section Start -->
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div>
+                <a href="index.html" class="sm:text-2xl font-Lobster font-semibold">IndorePlants.</a>
+            </div>
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden">
+                <ul class="flex flex-col items-center gap-8">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                </ul>
+                <div class="absolute bottom-0 -right-10 opacity-90">
+                    <img src="assets/img/leaf-1.png" alt="leaf-image" class="w-32">
+                </div>
+                <div class="absolute -top-5 -left-10 rotate-90 opacity-90">
+                    <img src="assets/img/leaf-2.png" alt="leaf-image" class="w-32">
+                </div>
+            </div>
+            <div class="text-xl sm:text-3xl cursor-pointer z-50">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Javascript file -->
+    <script src="main.js"></script>
 </body>
+
 </html>
