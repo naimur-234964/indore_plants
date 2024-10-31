@@ -49,38 +49,62 @@
     <main>
         <!-- Home Section Start -->
         <section id="home">
-            <div class="">
-                <div class="">
-                    <div class="">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+
+                    <!-- Home Content Start -->
+                    <div class="w-full space-y-5 lg:w-1/2">
                         <h1>
                             <span class="text-yellow-500">Plants</span> make a <br>
                             positive
                             <span class="text-yellow-500">impact</span> on <br>
                             your environment
                         </h1>
-                        <p>
+                        <p class="text-slate-300 font-Lobster">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime odio ipsum maiores
                             eaque assumenda sunt similique. Aliquam laboriosam iure, minima assumenda incidunt,
                             recusandae maxime id illum, dignissimos eligendi totam.
                         </p>
-                        <div>
-                            <button>
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <button class="btn">
                                 <span>Shop Now</span>
                                 <i class="ri-leaf-line"></i>
                             </button>
-                            <button>
+                            <button class="btn btn_outline">
                                 <span>Know More</span>
                                 <i class="ri-leaf-line"></i>
                             </button>
                         </div>
-                        <p>You will get 30-days free trial.</p>
-                        <div>
-                            <i class="ri-facebook-fill"></i>
-                            <i class="ri-twitter-x-line"></i>
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-linkedin-fill"></i>
+                        <p class="text-sm font-Lobster text-slate-300">You will get 30-days free trial.</p>
+                        <div class="flex items-center gap-2 text-lg text-slate-300 lg:pt-10">
+                            <i class="ri-facebook-fill hover:text-yellow-500 cursor-pointer duration-300"></i>
+                            <i class="ri-twitter-x-line hover:text-yellow-500 cursor-pointer duration-300 text-base"></i>
+                            <i class="ri-instagram-line hover:text-yellow-500 cursor-pointer duration-300"></i>
+                            <i class="ri-linkedin-fill hover:text-yellow-500 cursor-pointer duration-300"></i>
                         </div>
                     </div>
+                    <!-- Home Content End -->
+                    
+                    <!-- Home Image Start -->
+                     <div class="w-full relative  lg:w-1/2">
+                        <img src="assets/img/home.png" alt="home_image">
+
+                        <!-- Leaf -->
+                        <div class="absolute -top-10 right-0 text-6xl text-yellow-500 opacity-30">
+                            <i class="ri-leaf-line"></i>
+                        </div>
+                        
+                        <!-- Flower -->
+                        <div class="absolute bottom-0 left-0 text-6xl text-yellow-500 opacity-30">
+                            <i class="ri-flower-line"></i>
+                        </div>
+                        
+                        <!-- Plant -->
+                        <div class="hidden absolute -top-10 -left-5 text-6xl text-yellow-500 opacity-30 lg:block">
+                            <i class="ri-plant-line"></i>
+                        </div>
+                    </div>
+                    <!-- Home Image End -->
                 </div>
             </div>
         </section>
