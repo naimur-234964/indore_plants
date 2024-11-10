@@ -400,9 +400,11 @@
 
             <!--  -->
             <div class="container">
-                <div class="py-12">
-                    <ul class="">
-                        <li class="">
+                <div class="swiper py-12">
+                    <ul class="swiper-wrapper">
+
+                        <!-- Card Start -->
+                        <li class="swiper-slide">
                             <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
                                 <p class="font-Lobster">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
@@ -419,7 +421,70 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- Card End -->
+
+                        <!-- Card Start -->
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-Lobster">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                                    voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-2.jpg" alt="review_image"
+                                        class="w-16 h-16 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">John Doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Card End -->
+
+                        <!-- Card Start -->
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-Lobster">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                                    voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-3.jpg" alt="review_image"
+                                        class="w-16 h-16 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">John Doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Card End -->
+
+                        <!-- Card Start -->
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-Lobster">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                                    voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-4.jpg" alt="review_image"
+                                        class="w-16 h-16 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">John Doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Card End -->
+
                     </ul>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -427,8 +492,28 @@
     </main>
     <!-- Main Section End -->
 
-    <!-- Swiper JS -->
+    <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        });
+    </script>
+
 
     <!-- Javascript file -->
     <script src="main.js"></script>
