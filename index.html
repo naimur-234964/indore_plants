@@ -390,7 +390,14 @@
         <!-- Popular Section End -->
 
         <!-- Review Section Start -->
-        <section id="review">
+        <section id="review" class="relative mb-28 md:mb-40 overflow-hidden">
+
+            <!-- Decoration Image -->
+             <div class="absolute -top-5 -left-12">
+                <img src="assets/img/leaf-4.png" alt="" class="w-40 md:w-52 xxl:w-64 opacity-50">
+            </div>
+            <!-- Decoration Image -->
+
             <!-- Headline start -->
             <div class="flex flex-col items-center gap-3 text-center mb-16">
                 <h2 class="title">Customer Review</h2>
@@ -511,6 +518,18 @@
                 el: '.swiper-pagination',
                 clickable: true
             },
+            grabCursro: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
         });
     </script>
 
